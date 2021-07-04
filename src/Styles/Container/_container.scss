@@ -33,14 +33,20 @@
 
 .box {
   position: relative;
-  box-shadow: 3px 3px 46px -20px #000000;
-  background-color: #4776e6;
-  opacity: 0.9;
   border-radius: 10px;
   width: 800px;
   height: 200px;
-  padding-top: 30px;
   overflow: hidden;
+}
+
+.VisibleBlock {
+  position: relative;
+  box-shadow: 3px 3px 46px -20px #000000;
+  background-color: #4776e6;
+  opacity: 0.9;
+  width: 1500px;
+  height: 200px;
+  padding-top: 30px;
 }
 
 .Block button {
@@ -70,9 +76,10 @@
   width: 170px;
   height: 150px;
 
-  h1 {
+  span {
     font-size: 40px;
     color: white;
+    font-weight: 500;
   }
 }
 

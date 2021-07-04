@@ -4,7 +4,10 @@ import { useState } from "react";
 
 function App() {
   const [order] = useState(
-    Array.from({ length: 4 }, () => Math.floor(Math.random() * 1000))
+    /*     Array.from({ length: 4 }, () => Math.floor(Math.random() * 1000)) */
+    [...Array(6)].map(() => {
+      return Math.floor(Math.random() * 1000);
+    })
   );
   const [press, setPress] = useState(false);
   const [show, setShow] = useState(false);
@@ -53,20 +56,22 @@ function App() {
         <div className="box">
           <div className="Line"></div>
           <div className="AwardModal"></div>
-          {order.map((item, index) => {
-            return (
-              <Item
-                reset={reset}
-                price={item}
-                index={index}
-                order={order}
-                press={press}
-                speed={randomSpeed}
-                takeFromChildShow={takeFromChildShow.bind(this)}
-                takeIntoInventory={takeIntoInventory}
-              />
-            );
-          })}
+          <div className="VisibleBlock">
+            {order.map((item, index) => {
+              return (
+                <Item
+                  reset={reset}
+                  price={item}
+                  index={index}
+                  order={order}
+                  press={press}
+                  speed={randomSpeed}
+                  takeFromChildShow={takeFromChildShow.bind(this)}
+                  takeIntoInventory={takeIntoInventory}
+                />
+              );
+            })}
+          </div>
         </div>
 
         <div className="Block">

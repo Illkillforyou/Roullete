@@ -8,7 +8,8 @@ const App = (props) => {
   const [press, setPressed] = useState(false);
   const isInitialMount = useRef(true);
   const item = useRef(null);
-  let elementPosition = left + props.index * 220;
+  let spaceBetweenElements = props.index * 220;
+  let elementPosition = left + spaceBetweenElements;
 
   let accelleration = 0.0009;
 
@@ -36,7 +37,7 @@ const App = (props) => {
   useInterval(
     () => {
       if (item.current.offsetLeft < -150) {
-        setLeft(600 - props.index * 220);
+        setLeft(950 - spaceBetweenElements);
       } else {
         setLeft(left - speed);
         if (speed > 0.01) {
@@ -60,18 +61,16 @@ const App = (props) => {
   };
 
   return (
-    <div>
-      <div
-        className="item"
-        ref={item}
-        style={{
-          position: "absolute",
-          left: `${elementPosition}px`,
-          top: checkTheWinningElement() ? `10px` : ``,
-        }}
-      >
-        <h1>{props.price}</h1>
-      </div>
+    <div
+      className="item"
+      ref={item}
+      style={{
+        position: "absolute",
+        left: `${elementPosition}px`,
+        top: checkTheWinningElement() ? `10px` : ``,
+      }}
+    >
+      <span>{props.price}</span>
     </div>
   );
 };

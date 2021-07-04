@@ -56,15 +56,21 @@ body {
 
 .box {
   position: relative;
+  border-radius: 10px;
+  width: 800px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.VisibleBlock {
+  position: relative;
   -webkit-box-shadow: 3px 3px 46px -20px #000000;
           box-shadow: 3px 3px 46px -20px #000000;
   background-color: #4776e6;
   opacity: 0.9;
-  border-radius: 10px;
-  width: 800px;
+  width: 1500px;
   height: 200px;
   padding-top: 30px;
-  overflow: hidden;
 }
 
 .Block button {
@@ -94,9 +100,10 @@ body {
   height: 150px;
 }
 
-.item h1 {
+.item span {
   font-size: 40px;
   color: white;
+  font-weight: 500;
 }
 
 .Line {
