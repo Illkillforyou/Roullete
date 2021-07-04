@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Illkillforyou/Roullete/static/css/main.bfdb38e9.chunk.css",
+    "main.js": "/Illkillforyou/Roullete/static/js/main.1cdaba68.chunk.js",
+    "main.js.map": "/Illkillforyou/Roullete/static/js/main.1cdaba68.chunk.js.map",
+    "runtime-main.js": "/Illkillforyou/Roullete/static/js/runtime-main.357ba4d0.js",
+    "runtime-main.js.map": "/Illkillforyou/Roullete/static/js/runtime-main.357ba4d0.js.map",
+    "static/js/2.34992906.chunk.js": "/Illkillforyou/Roullete/static/js/2.34992906.chunk.js",
+    "static/js/2.34992906.chunk.js.map": "/Illkillforyou/Roullete/static/js/2.34992906.chunk.js.map",
+    "static/js/3.49576dcd.chunk.js": "/Illkillforyou/Roullete/static/js/3.49576dcd.chunk.js",
+    "static/js/3.49576dcd.chunk.js.map": "/Illkillforyou/Roullete/static/js/3.49576dcd.chunk.js.map",
+    "index.html": "/Illkillforyou/Roullete/index.html",
+    "static/css/main.bfdb38e9.chunk.css.map": "/Illkillforyou/Roullete/static/css/main.bfdb38e9.chunk.css.map",
+    "static/js/2.34992906.chunk.js.LICENSE.txt": "/Illkillforyou/Roullete/static/js/2.34992906.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.357ba4d0.js",
+    "static/js/2.34992906.chunk.js",
+    "static/css/main.bfdb38e9.chunk.css",
+    "static/js/main.1cdaba68.chunk.js"
+  ]
+}
