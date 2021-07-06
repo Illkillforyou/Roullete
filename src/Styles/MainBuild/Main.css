@@ -118,6 +118,7 @@ body {
 
 .SpinBtn {
   width: 200px !important;
+  font-weight: 500;
 }
 
 @-webkit-keyframes GradientBackground {

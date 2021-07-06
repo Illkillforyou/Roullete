@@ -11,13 +11,18 @@ function App() {
   );
   const [press, setPress] = useState(false);
   const [show, setShow] = useState(false);
-  const [reset, setReset] = useState(false);
+  const [reset, setReset] = useState(true);
   const [item, setItem] = useState(null);
+  const [resetBtn, SetresetBtn] = useState(true);
+
   let randomSpeed = Math.floor(Math.random() * 20 + 4);
+
+  let setResetBtnfromChild = (bool) => {
+    SetresetBtn(bool);
+  };
+
   let spin = () => {
     setPress((press) => !press);
-
-    console.log(press);
   };
 
   let takeFromChildShow = (winningItem) => {
@@ -28,6 +33,7 @@ function App() {
   };
 
   let takeIntoInventory = () => {
+    SetresetBtn(true);
     setShow(false);
     setReset((reset) => !reset);
   };
@@ -53,6 +59,15 @@ function App() {
         </div>
       ) : null}
       <div className="Content">
+        <button
+          type="button"
+          className="btn btn-primary SpinBtn"
+          onClick={takeIntoInventory}
+          disabled={resetBtn ? "true" : ""}
+        >
+          Reset
+        </button>
+
         <div className="box">
           <div className="Line"></div>
           <div className="AwardModal"></div>
@@ -68,6 +83,7 @@ function App() {
                   speed={randomSpeed}
                   takeFromChildShow={takeFromChildShow.bind(this)}
                   takeIntoInventory={takeIntoInventory}
+                  setResetBtnfromChild={setResetBtnfromChild}
                 />
               );
             })}

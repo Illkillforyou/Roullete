@@ -45,10 +45,14 @@ const App = (props) => {
         } else {
           setAward(true);
           setPressed(false);
+          if (elementPosition >= 27 && elementPosition <= 195) {
+          } else {
+            props.setResetBtnfromChild(false);
+          }
         }
       }
     },
-    10,
+    20,
     !press
   );
 
