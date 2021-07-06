@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Roullete/static/css/main.988c9fae.chunk.css",
-    "main.js": "/Roullete/static/js/main.47140d40.chunk.js",
-    "main.js.map": "/Roullete/static/js/main.47140d40.chunk.js.map",
+    "main.css": "/Roullete/static/css/main.c68f4e2a.chunk.css",
+    "main.js": "/Roullete/static/js/main.5985c0a2.chunk.js",
+    "main.js.map": "/Roullete/static/js/main.5985c0a2.chunk.js.map",
     "runtime-main.js": "/Roullete/static/js/runtime-main.568ceaad.js",
     "runtime-main.js.map": "/Roullete/static/js/runtime-main.568ceaad.js.map",
     "static/js/2.9582f5b0.chunk.js": "/Roullete/static/js/2.9582f5b0.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.32d94a93.chunk.js": "/Roullete/static/js/3.32d94a93.chunk.js",
     "static/js/3.32d94a93.chunk.js.map": "/Roullete/static/js/3.32d94a93.chunk.js.map",
     "index.html": "/Roullete/index.html",
-    "static/css/main.988c9fae.chunk.css.map": "/Roullete/static/css/main.988c9fae.chunk.css.map",
+    "static/css/main.c68f4e2a.chunk.css.map": "/Roullete/static/css/main.c68f4e2a.chunk.css.map",
     "static/js/2.9582f5b0.chunk.js.LICENSE.txt": "/Roullete/static/js/2.9582f5b0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.568ceaad.js",
     "static/js/2.9582f5b0.chunk.js",
-    "static/css/main.988c9fae.chunk.css",
-    "static/js/main.47140d40.chunk.js"
+    "static/css/main.c68f4e2a.chunk.css",
+    "static/js/main.5985c0a2.chunk.js"
   ]
 }
